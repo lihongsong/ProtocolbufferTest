@@ -1,6 +1,7 @@
-##Swift项目中接入swift-protobuf
+## Swift项目中接入swift-protobuf
 
-###环境配置
+### 环境配置
+
 以安装homebrew为前提，进行protocolBuffer的环境配置。
 ``` ruby
 brew install automake
@@ -17,7 +18,8 @@ brew install swift-protobuf
 ```
 
 
-###项目中集成
+### 项目中集成
+
 在项目中通过Cocoapods集成苹果爸爸封装的SwiftProtobuf库。
 ``` ruby
 
@@ -25,7 +27,8 @@ pod 'SwiftProtobuf', '~> 1.0'
 
 ```
 
-###使用方式
+### 使用方式
+
 先造一个.proto的文件数据：
 ``` ruby
 syntax = "proto2";
