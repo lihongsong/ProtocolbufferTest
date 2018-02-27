@@ -1,0 +1,27 @@
+syntax = "proto2";            // 指定版本号码
+// 不然会有如下报错
+// [libprotobuf WARNING google/protobuf/compiler/parser.cc:546] 
+// No syntax specified for the proto file: Person.proto. 
+// Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. 
+// (Defaulted to proto2 syntax.) Person.proto:3:1: Expected ";".
+
+package information;           // 定义了package的名字
+
+message Person {              
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    required string number = 1;
+    optional PhoneType type = 2 [default = HOME];
+  }
+
+  repeated PhoneNumber phone = 4;
+}

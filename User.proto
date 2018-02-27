@@ -1,0 +1,7 @@
+syntax = "proto3";            // 指定版本号码
+
+message User {              
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+}

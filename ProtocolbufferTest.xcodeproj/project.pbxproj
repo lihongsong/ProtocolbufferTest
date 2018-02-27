@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F6ADA62FD0C295AF4070A0 /* Pods_ProtocolbufferTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1B60B2DC4FC945414174E /* Pods_ProtocolbufferTest.framework */; };
 		8236F3C42045460400012375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236F3C32045460400012375 /* AppDelegate.swift */; };
 		8236F3C62045460400012375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236F3C52045460400012375 /* ViewController.swift */; };
 		8236F3C92045460400012375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8236F3C72045460400012375 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8236F3CE2045460400012375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8236F3CC2045460400012375 /* LaunchScreen.storyboard */; };
 		8236F3D92045460400012375 /* ProtocolbufferTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236F3D82045460400012375 /* ProtocolbufferTestTests.swift */; };
 		8236F3E42045460400012375 /* ProtocolbufferTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236F3E32045460400012375 /* ProtocolbufferTestUITests.swift */; };
+		8236F3FA204551A500012375 /* User.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8236F3F9204551A400012375 /* User.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7517132BC6F01651A0CAE821 /* Pods-ProtocolbufferTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolbufferTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolbufferTest/Pods-ProtocolbufferTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8236F3C02045460400012375 /* ProtocolbufferTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolbufferTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8236F3C32045460400012375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8236F3C52045460400012375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		8236F3DF2045460400012375 /* ProtocolbufferTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolbufferTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8236F3E32045460400012375 /* ProtocolbufferTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolbufferTestUITests.swift; sourceTree = "<group>"; };
 		8236F3E52045460400012375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8236F3F9204551A400012375 /* User.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.pb.swift; sourceTree = SOURCE_ROOT; };
+		8AD1B60B2DC4FC945414174E /* Pods_ProtocolbufferTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtocolbufferTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FE6639464FE3BCDA5561A5 /* Pods-ProtocolbufferTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolbufferTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolbufferTest/Pods-ProtocolbufferTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F6ADA62FD0C295AF4070A0 /* Pods_ProtocolbufferTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		669325E86D4B4C19C771A361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7517132BC6F01651A0CAE821 /* Pods-ProtocolbufferTest.debug.xcconfig */,
+				C8FE6639464FE3BCDA5561A5 /* Pods-ProtocolbufferTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		807649EE85B4FB1AD9498147 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AD1B60B2DC4FC945414174E /* Pods_ProtocolbufferTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8236F3B72045460400012375 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				8236F3D72045460400012375 /* ProtocolbufferTestTests */,
 				8236F3E22045460400012375 /* ProtocolbufferTestUITests */,
 				8236F3C12045460400012375 /* Products */,
+				669325E86D4B4C19C771A361 /* Pods */,
+				807649EE85B4FB1AD9498147 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +123,7 @@
 		8236F3C22045460400012375 /* ProtocolbufferTest */ = {
 			isa = PBXGroup;
 			children = (
+				8236F3F9204551A400012375 /* User.pb.swift */,
 				8236F3C32045460400012375 /* AppDelegate.swift */,
 				8236F3C52045460400012375 /* ViewController.swift */,
 				8236F3C72045460400012375 /* Main.storyboard */,
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8236F3E82045460400012375 /* Build configuration list for PBXNativeTarget "ProtocolbufferTest" */;
 			buildPhases = (
+				91DE95E50D7325886C9618E2 /* [CP] Check Pods Manifest.lock */,
 				8236F3BC2045460400012375 /* Sources */,
 				8236F3BD2045460400012375 /* Frameworks */,
 				8236F3BE2045460400012375 /* Resources */,
+				076E9B89CD49C7F536DF5075 /* [CP] Embed Pods Frameworks */,
+				194456CEA6614B95DF13CFC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +284,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		076E9B89CD49C7F536DF5075 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProtocolbufferTest/Pods-ProtocolbufferTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtocolbufferTest/Pods-ProtocolbufferTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		194456CEA6614B95DF13CFC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtocolbufferTest/Pods-ProtocolbufferTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DE95E50D7325886C9618E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProtocolbufferTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8236F3BC2045460400012375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8236F3C62045460400012375 /* ViewController.swift in Sources */,
+				8236F3FA204551A500012375 /* User.pb.swift in Sources */,
 				8236F3C42045460400012375 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +511,7 @@
 		};
 		8236F3E92045460400012375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7517132BC6F01651A0CAE821 /* Pods-ProtocolbufferTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,11 +522,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};
 			name = Debug;
 		};
 		8236F3EA2045460400012375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FE6639464FE3BCDA5561A5 /* Pods-ProtocolbufferTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +539,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};
 			name = Release;
 		};
