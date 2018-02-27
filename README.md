@@ -49,17 +49,17 @@ protoc  person.proto --swift_out="./"
 在项目中的代码实现：
 
 ``` swift
-        // 创建一个User的对象
-        var user = User()
+        // 创建一个Person的对象
+        var person = Person()
         user.email = "357997194@qq.com"
         user.id = 12
         user.name = "赵大宝"
         
-        // 序列化User数据
-        let data = try! user.serializedData()
+        // 序列化Person数据
+        let data = try! person.serializedData()
         
-        // 反序列化User数据
-        let user2 = try! User(serializedData: data)
+        // 反序列化Person数据
+        let person2 = try! Person(serializedData: data)
         
 ```
 为了方便直接用try!。。这个习惯不好。
